@@ -1,5 +1,9 @@
 header{
-    /* display: flex; */
+    position: fixed;
+    z-index: 1000;
+    background-color: white;
+    width: 100%;
+    flex-wrap: wrap;
     justify-content: space-around;
     border: 1px solid goldenrod;
     /* padding-top: 100px; */
@@ -17,7 +21,11 @@ nav{
     display: flex;
     justify-content: space-around;
 }
-
+/* .links>ul>li>a:hover{
+    transform: translateX(-50px);
+    box-shadow: #C2A23E;
+    outline: 1px solid #C2A23E;
+} */
 .links>ul>li>a{
     text-decoration: none;
     color: black;
@@ -53,15 +61,17 @@ nav{
 
 .hero{
     background-color: #1D315E;
-    padding: 35px;
+    padding: 50px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .para_contant>a{
     text-decoration: none;
     color: #C2A23E;
     font-size: 25px;
+    flex-wrap: wrap;
 }
 
 .hero_contant{
@@ -89,6 +99,11 @@ nav{
     display: flex;
 }
 
+.btn_golden>a:hover{
+    transform: translateY(-10px);
+    box-shadow: white;
+    outline: 2px solid white;
+}
 
 .btn_golden>a{
     text-decoration: none;
@@ -100,6 +115,11 @@ nav{
     padding: 10px;
 }
 
+.btn_outline>a:hover{
+    transform: translateY(-10px);
+    box-shadow: #C2A23E;
+    outline: 2px solid  #C2A23E;
+}
 .btn_outline>a{
     text-decoration: none;
     /* background-color: #C2A23E; */
@@ -114,7 +134,7 @@ nav{
 
 
 .about{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     text-align: center;
     padding: 100px;
 }
@@ -129,12 +149,88 @@ nav{
 
 .mission{
     border: 1px solid gray;
-    width: 450px;
+    width: 100%;
     border-radius: 20px;
+}
+
+.mission:hover{
+    transform: translateY(-10px);
+    box-shadow: #C2A23E;
+    outline: 2px solid goldenrod;
 }
 
 .main_mission{
     display: flex;
     column-gap: 20px;
+    justify-content: space-around;
     
+}
+
+
+
+
+
+
+.main_habit{
+    background-color: aliceblue;
+    padding: 100px;
+    justify-content: space-around;
+}
+.habit_box{
+    border: 1px solid antiquewhite;
+    width: 300px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: white;
+    
+}
+.habit_box:hover{
+    transform: translateY(-10px);
+    box-shadow: #C2A23E;
+    outline: 2px solid goldenrod;
+}
+
+.habit_boxmain{
+    display: flex;
+    flex-wrap: wrap;
+   column-gap: 30px;
+   row-gap: 30px;
+}
+
+
+
+.Activities_boxmain{
+    display: flex;
+    justify-content: space-around;
+    column-gap: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.Activities{
+    padding: 100px;
+}
+
+.Activities_text{
+    text-align: center;
+}
+
+.Activities_box{
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 20px;
+    width: 100%;
+    padding-top: -100px;
+}
+
+.Activities_box:hover{
+    transform: translateY(-10px);
+    box-shadow: #C2A23E;
+    outline: 1px solid #C2A23E;
+}
+
+.emoji{
+    width: 30px;
+    background-color: #C2A23E;
+    border-radius: 100px;
+
 }
