@@ -1,10 +1,13 @@
-header{
-    position: fixed;
-    z-index: 1000;
-    background-color: white;
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: space-around;
+
+@media screen and (min-width:458px) {
+        
+    header{
+        position: fixed;
+        z-index: 1000;
+        background-color: white;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-around;
     border: 1px solid goldenrod;
     /* padding-top: 100px; */
     height: 120px;
@@ -19,13 +22,17 @@ body{
 }
 nav{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
+
+
+
 /* .links>ul>li>a:hover{
     transform: translateX(-50px);
     box-shadow: #C2A23E;
     outline: 1px solid #C2A23E;
-} */
+    } */
 .links>ul>li>a{
     text-decoration: none;
     color: black;
@@ -58,6 +65,13 @@ nav{
     text-decoration: none;
     color: black;
 }
+
+
+}
+
+
+
+
 
 .hero{
     background-color: #1D315E;
@@ -95,34 +109,37 @@ nav{
 
 
 
-.btn{
-    display: flex;
-}
+    
+    
+    .btn{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .btn_golden>a:hover{
+        transform: translateY(-10px);
+        box-shadow: white;
+        outline: 2px solid white;
+    }
 
-.btn_golden>a:hover{
-    transform: translateY(-10px);
-    box-shadow: white;
-    outline: 2px solid white;
-}
-
-.btn_golden>a{
-    text-decoration: none;
-    background-color: #C2A23E;
-    color: black;
-    border: 1px solid #C2A23E;
-    border-radius: 25px;
-    font-size: 20px;
-    padding: 10px;
-}
-
-.btn_outline>a:hover{
-    transform: translateY(-10px);
-    box-shadow: #C2A23E;
-    outline: 2px solid  #C2A23E;
-}
-.btn_outline>a{
-    text-decoration: none;
-    /* background-color: #C2A23E; */
+    
+    .btn_golden>a{
+        text-decoration: none;
+        background-color: #C2A23E;
+        color: black;
+        border: 1px solid #C2A23E;
+        border-radius: 25px;
+        font-size: 20px;
+        padding: 10px;
+    }
+    
+    .btn_outline>a:hover{
+        transform: translateY(-10px);
+        box-shadow: #C2A23E;
+        outline: 2px solid  #C2A23E;
+    }
+    .btn_outline>a{
+        text-decoration: none;
+        /* background-color: #C2A23E; */
     color: white;
     border: 1px solid white;
     border-radius: 25px;
@@ -233,4 +250,47 @@ nav{
     background-color: #C2A23E;
     border-radius: 100px;
 
+}
+
+
+.gallery8achievement_contant{
+    text-align: center;
+    background-color: aliceblue;
+    padding: 100px;
+    /* display: flex; */
+}
+
+.art{
+    border: 1px solid black;
+    width: 400px;
+}
+
+.art:hover{
+    transform: translateY(-10px);
+    box-shadow: #C2A23E;
+    outline: 5px solid  #C2A23E;   
+}
+
+.art>img{
+    width: 100% ;
+    height:450px;
+}
+.art_info{
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.art_info>h2{
+    font-size: 18px;
+}
+
+.art_info>p{
+    font-size: 12px;
+}
+.art_div{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    row-gap: 50px;
 }
