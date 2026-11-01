@@ -1,16 +1,36 @@
 
 @media screen and (min-width:458px) {
+    header{
+        flex-wrap: wrap;
+    }
+}
         
     header{
         position: fixed;
-        z-index: 1000;
+        /* z-index: 1000; */
         background-color: white;
         width: 100%;
-        flex-wrap: wrap;
         justify-content: space-around;
-    border: 1px solid goldenrod;
-    /* padding-top: 100px; */
-    height: 120px;
+        border: 1px solid goldenrod;
+        /* padding-top: 100px; */
+        /* height: 100%; */
+}
+
+.container-fluid{
+    background-color: white;
+    justify-content: space-around;
+}
+.collapse{
+    justify-content: space-around !important; 
+   
+}
+
+.nav-link {
+    padding-top: 50px !important;
+}
+
+.home{
+    width: 100%;
 }
 
 img{
@@ -50,7 +70,7 @@ nav{
 
 .feedback{
     border: 2px solid green;
-    height: 35px;
+    /* height: 35px; */
     width: 160px;
     text-align: center;
     border-radius: 20px;
@@ -67,13 +87,14 @@ nav{
 }
 
 
-}
+
 
 
 
 
 
 .hero{
+    width: 100%;
     background-color: #1D315E;
     padding: 50px;
     display: flex;
