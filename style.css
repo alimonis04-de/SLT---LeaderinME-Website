@@ -1,82 +1,71 @@
 
-@media screen and (min-width:458px) {
-    header{
-        flex-wrap: wrap;
-    }
-}
-        
-    header{
+/* NavBar */
+header{
         position: fixed;
         /* z-index: 1000; */
         background-color: white;
         width: 100%;
+        flex-wrap: wrap;
         justify-content: space-around;
-        border: 1px solid goldenrod;
-        /* padding-top: 100px; */
-        /* height: 100%; */
+         border: 1px solid goldenrod;
+        
+}
+
+img{
+    padding-top: 25px;
+}
+
+@media screen and (max-width: 768px) {
+    .logo>img{
+        width: 310px;
+
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .navbar{
+    padding-left: 20px;
+    }
+}
+
+body{
+    margin: 0;
+    padding: 0;
 }
 
 .container-fluid{
-    background-color: white;
+    background-color: white !important;
     justify-content: space-around;
 }
 .collapse{
-    justify-content: space-around !important; 
+    justify-content: space-around !important;
+    
    
 }
 
 .nav-link {
     padding-top: 50px !important;
 }
-
-.home{
-    width: 100%;
-}
-
-img{
-    padding-top: 25px;
-}
-body{
-    margin: 0;
-    padding: 0;
-}
-nav{
+nav{ 
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-around !important;
 }
+/* .navbar{
+    padding-left: 20px;
+} */
 
 
-
-/* .links>ul>li>a:hover{
-    transform: translateX(-50px);
-    box-shadow: #C2A23E;
-    outline: 1px solid #C2A23E;
-    } */
-.links>ul>li>a{
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
-}
-
-.links>ul{
-    list-style: none;
-    display: flex;
-    gap: 50px;
-    padding-top: 50px;
-    /* justify-content: space-around; */
-    
-}
 
 .feedback{
     border: 2px solid green;
-    /* height: 35px; */
+    height: 35px;
     width: 160px;
     text-align: center;
     border-radius: 20px;
-    margin-top: 50px;
-    font-size: 25px;
-    
+    margin-top: 35px;
+    font-size: 20px;
+        
     
 }
 
@@ -93,13 +82,21 @@ nav{
 
 
 
-.hero{
+
+
+/* Hero Section */
+#home{
     width: 100%;
+}
+.hero{
+    /* border: 1px solid black; */
     background-color: #1D315E;
     padding: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    /* border-width: 100; */
+    margin: 0;
 }
 
 .para_contant>a{
@@ -125,13 +122,14 @@ nav{
     font-size: 25px;
 }
 
+@media screen and (max-width: 768px){
+    .heropic{
+        width: 100%;
+        height: 100%;
+    }
+}
 
 
-
-
-
-    
-    
     .btn{
         display: flex;
         flex-wrap: wrap;
@@ -171,6 +169,13 @@ nav{
 
 
 
+
+
+
+
+
+
+/* About Section */
 .about{
     /* border: 1px solid black; */
     text-align: center;
@@ -187,7 +192,7 @@ nav{
 
 .mission{
     border: 1px solid gray;
-    width: 100%;
+    width: 400px;
     border-radius: 20px;
 }
 
@@ -199,9 +204,16 @@ nav{
 
 .main_mission{
     display: flex;
+    flex-wrap: wrap;
     column-gap: 20px;
+    row-gap: 20px;
     justify-content: space-around;
     
+}
+@media screen and(max-width: 768px) {
+    .main_mission{
+        width: 100%;
+    }
 }
 
 
@@ -209,6 +221,11 @@ nav{
 
 
 
+
+
+
+
+/* Habit Section */
 .main_habit{
     background-color: aliceblue;
     padding: 100px;
@@ -237,12 +254,22 @@ nav{
 
 
 
+
+
+
+
+
+
+
+/* Activities Section */
 .Activities_boxmain{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-    column-gap: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
+    row-gap: 10px;
+    /* column-gap: 10px; */
+    /* padding-left: 20px;
+    padding-right: 20px; */
 }
 .Activities{
     padding: 100px;
@@ -256,7 +283,7 @@ nav{
     border: 1px solid black;
     border-radius: 20px;
     padding: 20px;
-    width: 100%;
+    width: 450px;
     padding-top: -100px;
 }
 
@@ -272,6 +299,15 @@ nav{
     border-radius: 100px;
 
 }
+
+
+
+
+
+
+
+
+
 
 
 .gallery8achievement_contant{
