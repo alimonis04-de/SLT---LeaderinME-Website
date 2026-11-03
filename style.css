@@ -373,5 +373,15 @@ nav{
 }
 
 footer{
-    background-color: #1D315E;
+    background-color: #006FB3;
+    justify-content: space-around;
+}
+
+.footer1box>img{
+    align-items: center;
+}
+
+.footer1box{
+    padding: 50px;
+    
 }
