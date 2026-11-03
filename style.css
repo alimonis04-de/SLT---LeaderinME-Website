@@ -1,4 +1,5 @@
 
+
 /* NavBar */
 header{
         position: fixed;
@@ -17,7 +18,7 @@ img{
 
 @media screen and (max-width: 768px) {
     .logo>img{
-        width: 310px;
+        width: 225px;
 
     }
 }
@@ -130,6 +131,23 @@ nav{
 }
 
 
+.hero_contant>.btn{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+@media screen and (max-width: 768px) {
+        .hero_contant>.btn{
+            row-gap: 20px ;
+
+        }
+        /* .btn_golden>a{
+            font-size: 12px;
+        }
+        .btn_outline>a{
+            font-size: 12px;
+        } */
+}
     .btn{
         display: flex;
         flex-wrap: wrap;
@@ -137,7 +155,7 @@ nav{
     .btn_golden>a:hover{
         transform: translateY(-10px);
         box-shadow: white;
-        outline: 2px solid white;
+        outline: 5px solid white;
     }
 
     
@@ -147,23 +165,25 @@ nav{
         color: black;
         border: 1px solid #C2A23E;
         border-radius: 25px;
-        font-size: 20px;
+        font-size: 15px;
         padding: 10px;
+        /* width: 100%; */
     }
     
     .btn_outline>a:hover{
         transform: translateY(-10px);
         box-shadow: #C2A23E;
-        outline: 2px solid  #C2A23E;
+        outline: 5px solid  #C2A23E;
     }
     .btn_outline>a{
         text-decoration: none;
         /* background-color: #C2A23E; */
     color: white;
-    border: 1px solid white;
+    border: 2px solid white;
     border-radius: 25px;
-    font-size: 20px;
+    font-size: 15px;
     padding: 10px;
+    /* width: 100%; */
 }
 
 
@@ -309,7 +329,7 @@ nav{
 
 
 
-
+/* ArtWork section */
 .gallery8achievement_contant{
     text-align: center;
     background-color: aliceblue;
@@ -350,4 +370,8 @@ nav{
     display: flex;
     justify-content: space-between;
     row-gap: 50px;
+}
+
+footer{
+    background-color: #1D315E;
 }
