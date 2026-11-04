@@ -372,16 +372,61 @@ nav{
     row-gap: 50px;
 }
 
+
+
+
+
+
+
+
+
+
+/* Footer Section */
 footer{
     background-color: #006FB3;
     justify-content: space-around;
+    padding: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0%;
+}
+.footer2box{
+    width: 300px;
 }
 
-.footer1box>img{
-    align-items: center;
-}
-
-.footer1box{
-    padding: 50px;
+.footer3box>p>a{
+    text-decoration: none;
+    color: black;
     
+}
+.footer3box>p>a:hover{
+        transform: translateX(-10px);
+        box-shadow: #C2A23E;
+        outline: 1px solid  #C2A23E;
+}
+.fa-brands{
+    background-color: #C2A23E;
+    /* border: 1px solid black;  */
+    width: 10px;
+    padding: 5px;
+    font-size: 28px;
+    border-radius: 50px;
+    
+}
+
+.fa-brands:hover{
+        transform: translateY(-10px);
+        box-shadow: #C2A23E;
+        outline: 5px solid  #C2A23E;
+}
+/* 
+.fa-facebook-f{
+    width: 10px;
+    padding: 5px;
+    
+} */
+
+.bottom{
+    background-color: #006FB3;
+    padding-top: 100px;
 }
