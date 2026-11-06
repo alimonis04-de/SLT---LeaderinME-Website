@@ -382,7 +382,7 @@ nav{
 
 
 /* Footer Section */
-footer{
+/* footer{
     background-color: #006FB3;
     justify-content: space-around;
     padding: 100px;
@@ -390,8 +390,11 @@ footer{
     flex-wrap: wrap;
     margin: 0%;
 }
+
+
 .footer2box{
-    width: 300px;
+    border: 1px solid black;
+    width: 250px;
 }
 
 .footer3box>p>a{
@@ -406,7 +409,6 @@ footer{
 }
 .fa-brands{
     background-color: #C2A23E;
-    /* border: 1px solid black;  */
     width: 10px;
     padding: 5px;
     font-size: 28px;
@@ -419,14 +421,284 @@ footer{
         box-shadow: #C2A23E;
         outline: 5px solid  #C2A23E;
 }
-/* 
-.fa-facebook-f{
-    width: 10px;
-    padding: 5px;
-    
-} */
-
+@media screen and (max-width: 768px) {
+    .bottom{
+        width: 100px;
+    }
+}
 .bottom{
+    border: 1px solid black;
+    width: 100%;
+    flex-wrap: wrap;
     background-color: #006FB3;
     padding-top: 100px;
+}
+@media screen and(min-width: 768px) {
+    .footer2box>img{
+        width: 100px;
+    }
+}
+
+@media screen and(max-width: 768px) {
+    .footer1box>img{
+        width: 100px;
+    }
+} */
+
+
+
+
+/* ============================= */
+/*       FOOTER SECTION          */
+/* ============================= */
+
+footer {
+    background-color: #006FB3;
+    padding: 60px 5%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Main Footer Container */
+
+.footerboxmain {
+    max-width: 1400px;
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1.2fr 1.5fr 1fr 1.2fr 0.8fr;
+
+    gap: 35px;
+
+    align-items: start;
+}
+
+/* All Footer Headings */
+
+.footerboxmain h3 {
+    color: white;
+    font-size: 21px;
+    margin-bottom: 20px;
+}
+
+/* All Footer Paragraphs */
+
+.footerboxmain p {
+    color: white;
+    font-size: 15px;
+    line-height: 1.8;
+    margin: 8px 0;
+}
+
+/* Box 1: HPS Logo */
+
+.footer1box img {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Box 2: Student Lighthouse Team */
+
+.footer2box img {
+    width: 100%;
+    max-width: 160px;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.footer2box h3 {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.footer2box h3 span {
+    display: block;
+    font-size: 16px;
+}
+
+.footer2box p {
+    max-width: 280px;
+}
+
+/* Box 3: Explore */
+
+.footer3box a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s ease;
+}
+
+.footer3box a:hover {
+    color: #C2A23E;
+    transform: translateX(6px);
+}
+
+/* Box 4: Our Purpose */
+
+.footer4box p {
+    margin: 8px 0;
+}
+
+/* Box 5: Social Media */
+
+.socialicons {
+    display: flex;
+    gap: 15px;
+}
+
+.socialicons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 42px;
+    height: 42px;
+
+    background-color: #C2A23E;
+    border-radius: 50%;
+
+    color: white;
+    text-decoration: none;
+
+    transition: 0.3s ease;
+}
+
+.socialicons a:hover {
+    transform: translateY(-6px);
+    background-color: white;
+    color: #006FB3;
+}
+
+/* Social Media Icons */
+
+.socialicons i {
+    font-size: 20px;
+}
+
+/* Bottom Footer */
+
+.bottom {
+    grid-column: 1 / -1;
+
+    width: 100%;
+    text-align: center;
+
+    border-top: 1px solid rgba(255,255,255,0.4);
+
+    margin-top: 30px;
+    padding-top: 25px;
+}
+
+.bottom h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.bottom p {
+    font-size: 14px;
+    margin: 0;
+}
+
+/* ============================= */
+/*       TABLET RESPONSIVE       */
+/* ============================= */
+
+@media screen and (max-width: 1000px) {
+
+    .footerboxmain {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 35px;
+    }
+
+}
+
+/* ============================= */
+/*       MOBILE RESPONSIVE       */
+/* ============================= */
+
+@media screen and (max-width: 768px) {
+
+    footer {
+        padding: 45px 6%;
+    }
+
+    .footerboxmain {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 35px 20px;
+    }
+
+    .footer1box img {
+        max-width: 180px;
+    }
+
+    .footer2box img {
+        max-width: 130px;
+    }
+
+    .footerboxmain h3 {
+        font-size: 18px;
+    }
+
+    .footerboxmain p {
+        font-size: 14px;
+    }
+
+    .bottom {
+        margin-top: 15px;
+    }
+
+}
+
+/* ============================= */
+/*       SMALL MOBILE            */
+/* ============================= */
+
+@media screen and (max-width: 480px) {
+
+    footer {
+        padding: 40px 25px;
+    }
+
+    .footerboxmain {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .footer1box img {
+        max-width: 190px;
+    }
+
+    .footer2box img {
+        max-width: 140px;
+    }
+
+    .footer2box p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer3box a:hover {
+        transform: translateY(-2px);
+    }
+
+    .socialicons {
+        justify-content: center;
+    }
+
+    .bottom {
+        grid-column: 1;
+        margin-top: 10px;
+        padding-top: 20px;
+    }
+
+    .bottom h3 {
+        font-size: 19px;
+    }
+
 }
